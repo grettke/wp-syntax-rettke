@@ -8,12 +8,6 @@
   Author URI: http://www.wisdomandwonder.com/
 */
 
-/*
-  $LastChangedDate: 2008-08-11 22:04:11 -0500 (Mon, 11 Aug 2008) $
-  $LastChangedRevision: 59317 $
-  $HeadURL: http://svn.wp-plugins.org/wp-syntax-rettke/tags/1.2/wp-syntax-rettke.php $
-*/
-
 add_action('wp_syntax_init_geshi', 'wp_syntax_cust_custom_geshi_styles');
 
 function wp_syntax_cust_custom_geshi_styles(&$geshi)
