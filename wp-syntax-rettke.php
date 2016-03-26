@@ -1,45 +1,17 @@
 <?php
 /*
-Plugin Name: wp-syntax-rettke
-Plugin URI: http://wordpress.org/extend/plugins/wp-syntax-rettke/
-Description: Serves as an example for the programmatic "Advanced Configuration" of GeSHi in Ryan McGeary's excellent WP-Syntax plugin.
-Version: 1.2
-Author: Grant Rettke
-Author URI: http://www.wisdomandwonder.com/
+  Plugin Name: wp-syntax-rettke
+  Plugin URI: http://wordpress.org/extend/plugins/wp-syntax-rettke/
+  Description: Serves as an example for the programmatic "Advanced Configuration" of GeSHi in Ryan McGeary's excellent WP-Syntax plugin.
+  Version: 1.2
+  Author: Grant Rettke
+  Author URI: http://www.wisdomandwonder.com/
 */
 
 /*
-<
-Note:	The following is the GPL-Compatible "Modified BSD" license: 
-Source:	http://www.xfree86.org/3.3.6/COPYRIGHT2.html#5
->
-Redistribution and use in source and binary forms, with or without 
-modification, are permitted provided that the following conditions are met:
-
-1. 	Redistributions of source code must retain the above copyright notice, 
-	this list of conditions and the following disclaimer.
-2. 	Redistributions in binary form must reproduce the above copyright 
-	notice, this list of conditions and the following disclaimer in the 
-	documentation and/or other materials provided with the distribution.
-3. 	The name of the author may not be used to endorse or promote products 
-	derived from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
-MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO 
-EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
-OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGE.
- */
-
-/*
-$LastChangedDate: 2008-08-11 22:04:11 -0500 (Mon, 11 Aug 2008) $
-$LastChangedRevision: 59317 $
-$HeadURL: http://svn.wp-plugins.org/wp-syntax-rettke/tags/1.2/wp-syntax-rettke.php $
+  $LastChangedDate: 2008-08-11 22:04:11 -0500 (Mon, 11 Aug 2008) $
+  $LastChangedRevision: 59317 $
+  $HeadURL: http://svn.wp-plugins.org/wp-syntax-rettke/tags/1.2/wp-syntax-rettke.php $
 */
 
 add_action('wp_syntax_init_geshi', 'wp_syntax_cust_custom_geshi_styles');
@@ -80,11 +52,11 @@ function wp_syntax_cust_custom_geshi_styles(&$geshi)
 
 	// Data types etc: Black
 	$geshi->set_keyword_group_style(4, $black);
-	
+
 	// Escaped chars: Black
 	$geshi->set_escape_characters_style($black);
 
-	// Tab width in spaces: 4 
+	// Tab width in spaces: 4
 	$geshi->set_tab_width(4);
 
 	// Methods: Black
