@@ -3,7 +3,7 @@
   Plugin Name: wp-syntax-rettke
   Plugin URI: http://wordpress.org/extend/plugins/wp-syntax-rettke/
   Description: Serves as an example for the programmatic "Advanced Configuration" of GeSHi in Ryan McGeary's excellent WP-Syntax plugin.
-  Version: 1.2
+  Version: 1.3
   Author: Grant Rettke
   Author URI: http://www.wisdomandwonder.com/
 */
